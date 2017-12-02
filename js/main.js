@@ -59,28 +59,28 @@ $(document).ready(function() {
         console.log("Create Profile button clicked original"); // fix smart quote from slide!
         // tracker code here, refer to slide #26 and #27
         tracker = ga.getAll()[0];
-        tracker.send('event', 'create', 'click');
+        tracker.send('event', 'Create Profile - Original', 'click');
     });
 
     $(".view-recipes-og").click(function() { // click handler for original design; Go to recipes button
         console.log("Go to Recipes button clicked original");
         // tracker code here, refer to slide #26 and #27
         tracker = ga.getAll()[0];
-        tracker.send('event', 'view', 'click');
+        tracker.send('event', 'Go to Recipes - Original', 'click');
     });
 
     $(".create-profile-btn").click(function() { // click handler for redesign; create button
         console.log("Create Profile button clicked redesign");
         // tracker code here, refer to slide #26 and #27
         tracker = ga.getAll()[0];
-        tracker.send('event', 'create', 'click');
+        tracker.send('event', 'Create Profile - Redesign', 'click');
     });
 
     $(".view-recipes-redesign").click(function() { // click handler for redesign; Go to recipes button
         console.log("Go to Recipes button clicked redesign");
         // tracker code here, refer to slide #26 and #27
         tracker = ga.getAll()[0];
-        tracker.send('event', 'view', 'click');
+        tracker.send('event', 'Go to Recipes - Redesign', 'click');
     });
 });
 
