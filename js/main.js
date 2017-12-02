@@ -55,11 +55,32 @@ $(document).ready(function() {
     });
 
     // Click Handler; Registers to google analytics once the button is clicked
-    $(".likeBtn").click(function() { // click handler for original design
-        console.log("like button clicked"); // fix smart quote from slide!
+    $("#original-create-btn").click(function() { // click handler for original design; create button
+        console.log("Create Profile button clicked original"); // fix smart quote from slide!
         // tracker code here, refer to slide #26 and #27
         tracker = ga.getAll()[0];
-        tracker.send('event', 'like', 'click');
+        tracker.send('event', 'create', 'click');
+    });
+
+    $(".view-recipes-og").click(function() { // click handler for original design; Go to recipes button
+        console.log("Go to Recipes button clicked original");
+        // tracker code here, refer to slide #26 and #27
+        tracker = ga.getAll()[0];
+        tracker.send('event', 'view', 'click');
+    });
+
+    $(".create-profile-btn").click(function() { // click handler for redesign; create button
+        console.log("Create Profile button clicked redesign");
+        // tracker code here, refer to slide #26 and #27
+        tracker = ga.getAll()[0];
+        tracker.send('event', 'create', 'click');
+    });
+
+    $(".view-recipes-redesign").click(function() { // click handler for redesign; Go to recipes button
+        console.log("Go to Recipes button clicked redesign");
+        // tracker code here, refer to slide #26 and #27
+        tracker = ga.getAll()[0];
+        tracker.send('event', 'view', 'click');
     });
 });
 
